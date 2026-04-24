@@ -2,56 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Estructura con Tabla y Multimedia</title>
+    <title>Taller de Formularios HTML5</title>
 </head>
 <body>
 
-    <header>
-        <h2>Título Principal</h2>
-    </header>
-
-    <nav>
-        <a href="#inicio">Enlace 1</a>
-    </nav>
+    <h1>Formulario de Registro</h1>
     
-    <nav>
-        <a href="#contacto">Enlace 2</a>
-    </nav>
-
-    <section>
-        <p>Este es el contenido de texto dentro de la sección.</p>
-
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Componente</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Procesador</td>
-                    <td>Funcional</td>
-                </tr>
-                <tr>
-                    <td>Memoria RAM</td>
-                    <td>Optimizada</td>
-                </tr>
-                <tr>
-                    <td>Disco Duro</td>
-                    <td>Verificado</td>
-                </tr>
-            </tbody>
-        </table>
-
+    <form action="#" method="post">
+        
+        <div>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
         <br>
 
-        <img src="perfil.jpeg" alt="Fotografía de ejemplo" width="200">
-    </section>
+        <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <br>
 
-    <footer>
-        <p>Samuel Martinez Bayona</p>
-    </footer>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="100" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="fecha_nac">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nac" name="fecha_nac" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+
+        <div>
+            <button type="submit">Enviar datos</button>
+        </div>
+
+    </form>
 
 </body>
 </html>
